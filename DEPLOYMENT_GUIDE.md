@@ -4,7 +4,7 @@
 
 ### 🚀 Backend Deployment (Render)
 
-**URL:** Will be like `https://your-app-name.onrender.com`
+**URL:** https://course-reg-n2sw.onrender.com
 
 **Environment Variables to Set in Render:**
 
@@ -35,7 +35,7 @@ LOG_LEVEL=INFO
 **Environment Variable to Set in Vercel:**
 
 ```env
-VITE_API_BASE_URL=https://your-backend-name.onrender.com/api
+VITE_API_BASE_URL=https://course-reg-n2sw.onrender.com/api
 ```
 
 **Steps:**
@@ -54,7 +54,7 @@ After both deployments:
 
 ### Backend (Render):
 - [ ] Service is running (check Render dashboard)
-- [ ] Test endpoint: `https://your-backend.onrender.com/api/courses`
+- [ ] Test endpoint: `https://course-reg-n2sw.onrender.com/api/courses`
 - [ ] MongoDB Atlas allows connections from 0.0.0.0/0
 - [ ] CORS includes Vercel domain
 
@@ -78,7 +78,7 @@ After both deployments:
 | Component | Location | Value |
 |-----------|----------|-------|
 | **Frontend URL** | Vercel | `https://course-reg-eight.vercel.app` |
-| **Backend URL** | Render | `https://[your-app].onrender.com` |
+| **Backend URL** | Render | `https://course-reg-n2sw.onrender.com` |
 | **Database** | MongoDB Atlas | `cluster0.4jk2gyg.mongodb.net` |
 | **Frontend → Backend** | Vercel env var | `VITE_API_BASE_URL` |
 | **Backend → Frontend** | Render env var | `CORS_ALLOWED_ORIGINS` |
@@ -143,7 +143,7 @@ Must be set on **both** sides:
 
 Create `frontend/.env.local`:
 ```env
-VITE_API_BASE_URL=https://your-backend.onrender.com/api
+VITE_API_BASE_URL=https://course-reg-n2sw.onrender.com/api
 ```
 
 Then run:

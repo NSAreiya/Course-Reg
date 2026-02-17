@@ -32,7 +32,7 @@ Add the following environment variable in Vercel:
 
 | Variable Name | Value | Description |
 |---------------|-------|-------------|
-| `VITE_API_BASE_URL` | `https://your-backend.onrender.com/api` | Your backend API URL |
+| `VITE_API_BASE_URL` | `https://course-reg-n2sw.onrender.com/api` | Your backend API URL |
 
 **How to add:**
 1. In project settings, go to "Environment Variables"
@@ -90,7 +90,7 @@ Vercel automatically deploys:
 
 **Vercel Production:**
 ```env
-VITE_API_BASE_URL=https://course-registration-backend.onrender.com/api
+VITE_API_BASE_URL=https://course-reg-n2sw.onrender.com/api
 ```
 
 ## Important Notes
@@ -172,7 +172,7 @@ npm run preview
 **Check environment variables locally:**
 Create a `.env.local` file (not committed to git):
 ```env
-VITE_API_BASE_URL=https://your-backend.onrender.com/api
+VITE_API_BASE_URL=https://course-reg-n2sw.onrender.com/api
 ```
 
 ## Support
