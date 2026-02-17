@@ -75,11 +75,7 @@ const Login = ({ onNavigate }) => {
               Create Account
             </button>
           </p>
-          <p className="demo-info">
-            <strong>Demo Credentials:</strong>
-            <br />
-            Admin: username: admin, password: admin123
-          </p>
+         
         </div>
       </div>
     </div>
