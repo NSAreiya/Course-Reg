@@ -1,0 +1,239 @@
+.admin-dashboard {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+.admin-nav {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  background: #f0f0f0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.nav-btn:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.nav-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.logout-btn {
+  background: #fee !important;
+  color: #d33 !important;
+}
+
+.logout-btn:hover {
+  background: #fdd !important;
+}
+
+.admin-content {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.enrollment-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.enrollment-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.enrollment-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.enrollment-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.card-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card-title h2 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.total-badge {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  backdrop-filter: blur(10px);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.enrollment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.enrollment-table thead {
+  background: #f8f9fa;
+}
+
+.enrollment-table th {
+  padding: 20px;
+  text-align: left;
+  font-weight: 700;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.enrollment-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.enrollment-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.enrollment-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.enrollment-table td {
+  padding: 20px;
+  color: #555;
+  font-size: 15px;
+}
+
+.student-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.course-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.date-cell {
+  color: #666;
+  font-size: 14px;
+}
+
+.no-enrollments {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.no-enrollments h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.no-enrollments p {
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .admin-nav {
+    padding: 15px 20px;
+  }
+
+  .admin-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    padding: 25px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+  }
+
+  .enrollment-table {
+    min-width: 600px;
+  }
+
+  .enrollment-table th,
+  .enrollment-table td {
+    padding: 15px 10px;
+  }
+}

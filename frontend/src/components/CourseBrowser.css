@@ -1,0 +1,153 @@
+.course-browser {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.browser-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.browser-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.browser-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card * {
+  color: inherit;
+}
+
+.course-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.course-card:hover::before {
+  transform: scaleX(1);
+}
+
+.course-icon {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.course-title {
+  font-size: 24px;
+  color: #333 !important;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.course-instructor {
+  color: #667eea !important;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+  display: block;
+}
+
+.course-description {
+  color: #666 !important;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+  display: block;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.course-duration {
+  color: #666 !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.course-price {
+  color: #333 !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.add-cart-btn {
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.add-cart-btn.in-cart {
+  background: linear-gradient(135deg, #20bf6b 0%, #26d07c 100%);
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}

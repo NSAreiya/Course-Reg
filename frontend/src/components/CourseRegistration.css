@@ -1,0 +1,140 @@
+.course-registration {
+  animation: fadeIn 0.5s ease-in;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.registration-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.registration-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.registration-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.registration-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30px;
+  text-align: center;
+}
+
+.card-header h2 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.registration-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field label {
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.form-field input,
+.form-field select {
+  padding: 14px 18px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  background: #fafafa;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.form-field select {
+  cursor: pointer;
+}
+
+.msg-error {
+  background: #fee;
+  color: #c33;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  border-left: 4px solid #c33;
+  font-weight: 500;
+}
+
+.msg-success {
+  background: #efe;
+  color: #2a7;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  border-left: 4px solid #2a7;
+  font-weight: 500;
+}
+
+.submit-btn {
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .registration-form {
+    padding: 30px 20px;
+  }
+
+  .registration-header h1 {
+    font-size: 28px;
+  }
+
+  .card-header h2 {
+    font-size: 20px;
+  }
+}
